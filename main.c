@@ -25,7 +25,7 @@ void NoSpaces(FILE* file, char letter){ // Sert à enlever les espaces
         fseek(file,location-1,SEEK_SET);
         char c = letter;
         while(c == ' '){
-            letter = fgetc(file);
+            c = fgetc(file);
         }    
     }  
 }
