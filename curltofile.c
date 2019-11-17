@@ -14,10 +14,9 @@ static size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
   return written;
 }
 
-int curltofile()
+int curltofile(char *url)
 {
 
- 
 printf(" \n \n ");
 printf("..........................................\n ");
 printf("          ooooo     ooo ooooooooo.   ooooo     \n ");   
@@ -46,14 +45,14 @@ printf(" \n \n ");
     fclose(pagefile);
   }
   curl_easy_cleanup(curl_handle);
-  curl_global_cleanup();
+  curl_global_cleanup(); 
   return 0;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
 
-curltofile();
+curltofile(url);
 
 printf("\n \n \n");
 printf("The URL  %s \n", url);
