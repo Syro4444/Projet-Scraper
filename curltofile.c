@@ -14,7 +14,7 @@ static size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
   return written;
 }
 
-int download_page()
+int curltofile()
 {
 
  
@@ -53,7 +53,7 @@ printf(" \n \n ");
 int main()
 {
 
-download_page();
+curltofile();
 
 printf("\n \n \n");
 printf("The URL  %s \n", url);
